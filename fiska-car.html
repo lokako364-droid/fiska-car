@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FISKA CAR | وكالة كراء السيارات بالرباط - ابتداءً من 249 درهم</title>
+  <meta name="description" content="وكالة كراء السيارات فالخدمة ديالتكم بالرباط وسلا والنواحي ابتداءً من 249 درهم/اليوم. حجز مباشر عبر واتساب." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#f59e0b',
+            whatsapp: '#25D366'
+          },
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+            brand: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cairo & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0b0f17;
+      color: #f1f5f9;
+    }
+    .font-brand {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0f17] text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-500 selection:text-black">
+
+  <!-- Notice Banner: Quality & No InDrive -->
+  <div class="bg-gradient-to-r from-red-950 via-zinc-900 to-red-950 border-b border-red-900/50 py-2 px-4 text-xs md:text-sm text-center text-slate-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1 font-bold text-red-400 bg-red-950/90 px-2 py-0.5 rounded border border-red-800">
+        <i class="fa-solid fa-ban"></i>
+        NO INDRIVE
+      </span>
+      <span>سياراتنا نظيفة ومفحوصة للاستعمال الشخصي والعائلي فقط - لا نقبل تطبيقات النقل لضمان صيانة الأسطول وراحة الزبناء.</span>
+      <span class="text-amber-400 font-semibold hidden md:inline">| تسليم فوري في الرباط وسلا ومطار الرباط سلا</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-[#0b0f17]/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Brand -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 p-0.5 shadow-lg shadow-amber-500/20">
+          <div class="w-full h-full bg-[#0b0f17] rounded-[10px] flex items-center justify-center">
+            <i class="fa-solid fa-car text-amber-400 text-lg"></i>
+          </div>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-wider text-white font-brand">FISKA CAR</span>
+          <p class="text-[11px] text-slate-400 -mt-1 font-medium">وكالة كراء السيارات بالرباط · LOCATION DE VOITURE</p>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#fleet" class="hover:text-amber-400 transition">أسطول السيارات</a>
+        <a href="#about" class="hover:text-amber-400 transition">عن الوكالة</a>
+        <a href="#wedding" class="hover:text-amber-400 transition">خدمة الأعراس</a>
+        <a href="#terms" class="hover:text-amber-400 transition">شروط الكراء</a>
+      </nav>
+
+      <!-- Contact Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+212622177043" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition">
+          <i class="fa-solid fa-phone text-amber-400"></i>
+          <span class="hidden sm:inline font-mono">06 22 17 70 43</span>
+          <span class="sm:hidden">اتصال</span>
+        </a>
+        <a href="https://wa.me/212622177043" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-black font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-[#25D366]/20">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span class="hidden xs:inline">واتساب مباشر</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-slate-800/80 bg-gradient-to-b from-[#0e1422] to-[#0b0f17]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Text -->
+        <div class="lg:col-span-7 space-y-6 text-right">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs sm:text-sm font-semibold">
+            <i class="fa-solid fa-star text-xs"></i>
+            <span>وكالة كراء السيارات المعتمدة بالرباط وسلا</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+            وكالة كراء السيارات <span class="text-transparent bg-clip-text bg-gradient-to-l from-amber-400 via-amber-300 to-amber-500">فالخدمة ديالتكم</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            مرحباً بكم عند <strong class="text-white">FISKA CAR</strong> (المسؤول علاء). نضع بين أيديكم أحدث سيارات الديزل الاقتصادية والمريحة، ابتداءً من <span class="text-amber-400 font-extrabold text-xl">249 درهم / اليوم</span>، مع تسليم سريع في مدينة الرباط، سلا، ومطار الرباط سلا.
+          </p>
+
+          <!-- Highlights Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <p class="text-xs text-slate-400">الأسعار</p>
+              <p class="text-base font-bold text-amber-400">من 249 DH / يوم</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <p class="text-xs text-slate-400">التوصيل</p>
+              <p class="text-base font-bold text-slate-100">الرباط والمطار</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 col-span-2 sm:col-span-1">
+              <p class="text-xs text-slate-400">الجودة</p>
+              <p class="text-base font-bold text-emerald-400">سيارات جديدة ومفحوصة</p>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#fleet" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold px-6 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 text-base transition">
+              <span>اختر سيارتك الآن</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <button onclick="sendGeneralWhatsApp('طلب حجز مباشر من الصفحة الرئيسية')" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-black font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-500/20 text-base transition cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>حجز فوري عبر واتساب</span>
+            </button>
+
+            <a href="tel:+212622177043" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-5 py-3.5 rounded-xl font-bold text-sm transition">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>06 22 17 70 43</span>
+            </a>
+          </div>
+
+          <!-- Socials row -->
+          <div class="pt-4 border-t border-slate-800 flex items-center gap-4 flex-wrap text-sm text-slate-400">
+            <span class="font-semibold text-slate-300">تابعونا:</span>
+            <a href="https://instagram.com/fiska_car" target="_blank" class="hover:text-pink-400 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-instagram text-pink-500 text-lg"></i>
+              <span class="font-brand font-semibold">@fiska_car</span>
+            </a>
+            <a href="https://facebook.com/fiska.car" target="_blank" class="hover:text-blue-400 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-facebook text-blue-500 text-lg"></i>
+              <span>fiska car</span>
+            </a>
+            <a href="https://wa.me/212622177043" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+              <span class="font-mono">+212 622-177043</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Poster Image -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl p-1 bg-gradient-to-b from-slate-700/40 to-amber-500/30 shadow-2xl">
+            <div class="rounded-xl overflow-hidden bg-slate-900 border border-slate-800 relative group">
+              <img src="/assets/aistudio/IMG-20261109-WA0009_47eb7a2a.jpg" alt="Fiska Car Rabat Poster" class="w-full h-auto object-cover max-h-[500px]" />
+              <div class="absolute top-3 right-3 bg-black/80 backdrop-blur-md border border-slate-700 px-3 py-1 rounded-lg text-xs font-bold text-amber-400">
+                وكالة معتمدة - الرباط
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Section -->
+  <section id="fleet" class="py-16 sm:py-20 bg-[#0b0f17]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="text-amber-400 text-sm font-bold tracking-wider">أسطول سيارات فيسكا كار</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">اختر سيارتك المفضلة وحدد تواريخك للحجز الفوري</h2>
+        <p class="text-slate-400 text-base">
+          سيارات حديثة مكيفة، محركات ديزل قوية واقتصادية، نظافة تامة وضمان أفضل سعر في الرباط.
+        </p>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Car 1: Dacia Logan -->
+        <div class="rounded-2xl bg-slate-900/90 border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="car-dacia">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-950">
+            <img src="/assets/aistudio/IMG-20261109-WA0011_932ffd76.jpg" alt="Dacia Logan 2024 Fiska Car" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute top-3 right-3">
+              <span class="bg-amber-500 text-black text-xs font-black px-2.5 py-1 rounded-md shadow">249 DH <span class="font-normal text-[10px]">/ اليوم</span></span>
+            </div>
+            <div class="absolute bottom-3 right-3 text-right">
+              <h3 class="text-xl font-black text-white">داسيا لوغان (Dacia Logan)</h3>
+              <p class="text-xs text-slate-300 font-medium">موديل 2024 الجديد - ديزل اقتصادي</p>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="text-xs font-semibold text-amber-300/90 bg-amber-950/30 border border-amber-900/40 rounded-lg p-2 text-right">
+              الأنسب سعراً واستهلاكاً - ابتداءً من 249 درهم / اليوم
+            </div>
+
+            <!-- Specs -->
+            <div class="grid grid-cols-4 gap-2 text-xs text-slate-300 text-center">
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gas-pump text-amber-400 block mb-1"></i>
+                <span>ديزل مازوط</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gear text-amber-400 block mb-1"></i>
+                <span>يدوي Manuelle</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-snowflake text-amber-400 block mb-1"></i>
+                <span>كليماتيزور</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-users text-amber-400 block mb-1"></i>
+                <span>5 مقاعد</span>
+              </div>
+            </div>
+
+            <!-- Booking Inputs -->
+            <div class="pt-3 border-t border-slate-800 space-y-3 text-right">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الاستلام:</label>
+                  <input type="date" id="pickup-dacia" onchange="updateCalc('dacia', 249)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الإرجاع:</label>
+                  <input type="date" id="return-dacia" onchange="updateCalc('dacia', 249)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">مكان التسليم:</label>
+                <select id="loc-dacia" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400">
+                  <option>الرباط - وسط المدينة</option>
+                  <option>الرباط - أكدال</option>
+                  <option>مطار الرباط سلا الدولي</option>
+                  <option>محطة قطار الرباط أكدال</option>
+                  <option>مدينة سلا</option>
+                  <option>مدينة تمارة</option>
+                </select>
+              </div>
+
+              <!-- Price Calc Strip -->
+              <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-between text-xs">
+                <span>المدة: <strong id="days-dacia" class="text-white">3 أيام</strong></span>
+                <span>المجموع التقديري: <strong id="total-dacia" class="text-amber-400 font-mono text-sm">747 DH</strong></span>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button onclick="bookWhatsApp('داسيا لوغان (Dacia Logan)', 249, 'dacia')" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 transition text-sm cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>حجز عبر واتساب (+212622177043)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 2: Renault Clio 5 -->
+        <div class="rounded-2xl bg-slate-900/90 border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="car-clio">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-950">
+            <img src="/assets/aistudio/IMG-20261109-WA0012_09ca7ba2.jpg" alt="Renault Clio 5 2024 Fiska Car" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute top-3 right-3">
+              <span class="bg-amber-500 text-black text-xs font-black px-2.5 py-1 rounded-md shadow">300 DH <span class="font-normal text-[10px]">/ اليوم</span></span>
+            </div>
+            <div class="absolute bottom-3 right-3 text-right">
+              <h3 class="text-xl font-black text-white">رينو كليو 5 (Renault Clio 5)</h3>
+              <p class="text-xs text-slate-300 font-medium">الفيس ليفت الجديد 2024 - أناقة وراحة</p>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="text-xs font-semibold text-amber-300/90 bg-amber-950/30 border border-amber-900/40 rounded-lg p-2 text-right">
+              الأكثر طلباً للشباب ورجال الأعمال - تصميم عصري وشاشة ذكية
+            </div>
+
+            <!-- Specs -->
+            <div class="grid grid-cols-4 gap-2 text-xs text-slate-300 text-center">
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gas-pump text-amber-400 block mb-1"></i>
+                <span>ديزل مازوط</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gear text-amber-400 block mb-1"></i>
+                <span>يدوي 6 سرعات</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-snowflake text-amber-400 block mb-1"></i>
+                <span>كليماتيزور</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-users text-amber-400 block mb-1"></i>
+                <span>5 مقاعد</span>
+              </div>
+            </div>
+
+            <!-- Booking Inputs -->
+            <div class="pt-3 border-t border-slate-800 space-y-3 text-right">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الاستلام:</label>
+                  <input type="date" id="pickup-clio" onchange="updateCalc('clio', 300)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الإرجاع:</label>
+                  <input type="date" id="return-clio" onchange="updateCalc('clio', 300)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">مكان التسليم:</label>
+                <select id="loc-clio" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400">
+                  <option>الرباط - وسط المدينة</option>
+                  <option>الرباط - أكدال</option>
+                  <option>مطار الرباط سلا الدولي</option>
+                  <option>محطة قطار الرباط أكدال</option>
+                  <option>مدينة سلا</option>
+                  <option>مدينة تمارة</option>
+                </select>
+              </div>
+
+              <!-- Price Calc Strip -->
+              <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-between text-xs">
+                <span>المدة: <strong id="days-clio" class="text-white">3 أيام</strong></span>
+                <span>المجموع التقديري: <strong id="total-clio" class="text-amber-400 font-mono text-sm">900 DH</strong></span>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button onclick="bookWhatsApp('رينو كليو 5 (Renault Clio 5)', 300, 'clio')" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 transition text-sm cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>حجز عبر واتساب (+212622177043)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 3: Peugeot 208 -->
+        <div class="rounded-2xl bg-slate-900/90 border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="car-208">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-950">
+            <img src="/assets/aistudio/IMG-20261109-WA0017_6ce7b739.jpg" alt="Peugeot 208 Fiska Car" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute top-3 right-3">
+              <span class="bg-amber-500 text-black text-xs font-black px-2.5 py-1 rounded-md shadow">300 DH <span class="font-normal text-[10px]">/ اليوم</span></span>
+            </div>
+            <div class="absolute bottom-3 right-3 text-right">
+              <h3 class="text-xl font-black text-white">بيجو 208 (Peugeot 208)</h3>
+              <p class="text-xs text-slate-300 font-medium">موديل 2024 عصري - أداء وثبات عالي</p>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="text-xs font-semibold text-amber-300/90 bg-amber-950/30 border border-amber-900/40 rounded-lg p-2 text-right">
+              تصميم فرنسي رياضي أنيق ومقصورة ذكية متطورة
+            </div>
+
+            <!-- Specs -->
+            <div class="grid grid-cols-4 gap-2 text-xs text-slate-300 text-center">
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gas-pump text-amber-400 block mb-1"></i>
+                <span>ديزل مازوط</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gear text-amber-400 block mb-1"></i>
+                <span>يدوي Manuelle</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-snowflake text-amber-400 block mb-1"></i>
+                <span>كليماتيزور</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-users text-amber-400 block mb-1"></i>
+                <span>5 مقاعد</span>
+              </div>
+            </div>
+
+            <!-- Booking Inputs -->
+            <div class="pt-3 border-t border-slate-800 space-y-3 text-right">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الاستلام:</label>
+                  <input type="date" id="pickup-208" onchange="updateCalc('208', 300)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الإرجاع:</label>
+                  <input type="date" id="return-208" onchange="updateCalc('208', 300)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">مكان التسليم:</label>
+                <select id="loc-208" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400">
+                  <option>الرباط - وسط المدينة</option>
+                  <option>الرباط - أكدال</option>
+                  <option>مطار الرباط سلا الدولي</option>
+                  <option>محطة قطار الرباط أكدال</option>
+                  <option>مدينة سلا</option>
+                  <option>مدينة تمارة</option>
+                </select>
+              </div>
+
+              <!-- Price Calc Strip -->
+              <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-between text-xs">
+                <span>المدة: <strong id="days-208" class="text-white">3 أيام</strong></span>
+                <span>المجموع التقديري: <strong id="total-208" class="text-amber-400 font-mono text-sm">900 DH</strong></span>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button onclick="bookWhatsApp('بيجو 208 (Peugeot 208)', 300, '208')" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 transition text-sm cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>حجز عبر واتساب (+212622177043)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 4: Opel Corsa -->
+        <div class="rounded-2xl bg-slate-900/90 border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="car-corsa">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-950">
+            <img src="/assets/aistudio/IMG-20261109-WA0013_46210128.jpg" alt="Opel Corsa Wedding Car Fiska Car" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute top-3 right-3 flex items-center gap-2">
+              <span class="bg-amber-500 text-black text-xs font-black px-2.5 py-1 rounded-md shadow">320 DH <span class="font-normal text-[10px]">/ اليوم</span></span>
+              <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded-md shadow">مناسبة للأعراس</span>
+            </div>
+            <div class="absolute bottom-3 right-3 text-right">
+              <h3 class="text-xl font-black text-white">أوبل كورسا (Opel Corsa)</h3>
+              <p class="text-xs text-slate-300 font-medium">أناقة ألمانية فاخرة - خيار التزيين للأفراح متاح</p>
+            </div>
+          </div>
+
+          <div class="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+            <div class="text-xs font-semibold text-amber-300/90 bg-amber-950/30 border border-amber-900/40 rounded-lg p-2 text-right">
+              متاحة للأعراس والمناسبات السعيدة مع إمكانية التزيين بالأزهار عند الطلب
+            </div>
+
+            <!-- Specs -->
+            <div class="grid grid-cols-4 gap-2 text-xs text-slate-300 text-center">
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gas-pump text-amber-400 block mb-1"></i>
+                <span>ديزل مازوط</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-gear text-amber-400 block mb-1"></i>
+                <span>يدوي Manuelle</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-snowflake text-amber-400 block mb-1"></i>
+                <span>كليماتيزور</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-users text-amber-400 block mb-1"></i>
+                <span>5 مقاعد</span>
+              </div>
+            </div>
+
+            <!-- Booking Inputs -->
+            <div class="pt-3 border-t border-slate-800 space-y-3 text-right">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الاستلام:</label>
+                  <input type="date" id="pickup-corsa" onchange="updateCalc('corsa', 320)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-400 mb-1">تاريخ الإرجاع:</label>
+                  <input type="date" id="return-corsa" onchange="updateCalc('corsa', 320)" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-400 mb-1">مكان التسليم:</label>
+                <select id="loc-corsa" class="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-amber-400">
+                  <option>الرباط - وسط المدينة</option>
+                  <option>الرباط - أكدال</option>
+                  <option>مطار الرباط سلا الدولي</option>
+                  <option>محطة قطار الرباط أكدال</option>
+                  <option>مدينة سلا</option>
+                  <option>مدينة تمارة</option>
+                  <option>قاعة أفراح / فندق بالرباط</option>
+                </select>
+              </div>
+
+              <!-- Price Calc Strip -->
+              <div class="p-2.5 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-between text-xs">
+                <span>المدة: <strong id="days-corsa" class="text-white">3 أيام</strong></span>
+                <span>المجموع التقديري: <strong id="total-corsa" class="text-amber-400 font-mono text-sm">960 DH</strong></span>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button onclick="bookWhatsApp('أوبل كورسا (Opel Corsa)', 320, 'corsa')" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 transition text-sm cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>حجز عبر واتساب (+212622177043)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#070a10] border-t border-slate-800 text-slate-400 text-xs py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 text-right">
+        <!-- Brand -->
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-car text-amber-400 text-lg"></i>
+            <span class="text-xl font-black text-white font-brand">FISKA CAR</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed text-xs max-w-md">
+            وكالة فيسكا كار لكراء السيارات بالرباط والنواحي (المسؤول علاء). نلتزم بتقديم سيارات حديثة، نظيفة ومفحوصة تقنياً بأسعار تبدأ من 249 درهم، مع ضمان راحة البال والشفافية.
+          </p>
+          <div class="text-[11px] text-slate-500">
+            <span>📍 الرباط · سلا · تمارة · مطار الرباط سلا الدولي</span>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="text-sm font-bold text-white mb-2">روابط سريعة</h4>
+          <ul class="space-y-1.5">
+            <li><a href="#fleet" class="hover:text-amber-400 transition">أسطول السيارات والأسعار</a></li>
+            <li><a href="#terms" class="hover:text-amber-400 transition">شروط ووثائق الكراء</a></li>
+            <li><a href="tel:+212622177043" class="hover:text-amber-400 transition">اتصال مباشر: 06 22 17 70 43</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Socials -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-sm font-bold text-white mb-2">أرقام التواصل والشبكات</h4>
+          <p class="font-mono text-slate-300">الهاتف: 06 22 17 70 43 / 07 50 52 53 07</p>
+          <p class="font-mono text-emerald-400">واتساب: +212 622-177043</p>
+
+          <div class="pt-2 flex items-center gap-3">
+            <a href="https://instagram.com/fiska_car" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-pink-400 transition">
+              <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+            <a href="https://facebook.com/fiska.car" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-blue-400 transition">
+              <i class="fa-brands fa-facebook text-base"></i>
+            </a>
+            <a href="https://wa.me/212622177043" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-emerald-400 transition">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+            </a>
+            <a href="tel:+212622177043" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-amber-400 transition">
+              <i class="fa-solid fa-phone text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+        <p>© 2026 FISKA CAR. جميع الحقوق محفوظة. وكالة علاء (Alae) - الرباط.</p>
+        <p>NO INDRIVE · سيارات نظيفة للاستخدام الشخصي والعائلي فقط</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic JS WhatsApp & Date Calculation Logic -->
+  <script>
+    // Initialize default dates (today + 3 days)
+    const today = new Date();
+    const returnDay = new Date();
+    returnDay.setDate(today.getDate() + 3);
+
+    const formatDate = (d) => d.toISOString().split('T')[0];
+
+    const todayStr = formatDate(today);
+    const returnStr = formatDate(returnDay);
+
+    const carKeys = ['dacia', 'clio', '208', 'corsa'];
+    const rates = { dacia: 249, clio: 300, '208': 300, corsa: 320 };
+
+    carKeys.forEach(k => {
+      const pInput = document.getElementById(`pickup-${k}`);
+      const rInput = document.getElementById(`return-${k}`);
+      if (pInput && rInput) {
+        pInput.value = todayStr;
+        pInput.min = todayStr;
+        rInput.value = returnStr;
+        rInput.min = todayStr;
+        updateCalc(k, rates[k]);
+      }
+    });
+
+    function updateCalc(carKey, rate) {
+      const pVal = document.getElementById(`pickup-${carKey}`).value;
+      const rVal = document.getElementById(`return-${carKey}`).value;
+      if (!pVal || !rVal) return;
+
+      const pDate = new Date(pVal);
+      const rDate = new Date(rVal);
+      const diff = rDate.getTime() - pDate.getTime();
+      let days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+      if (isNaN(days) || days < 1) days = 1;
+
+      const total = days * rate;
+
+      const daysEl = document.getElementById(`days-${carKey}`);
+      const totalEl = document.getElementById(`total-${carKey}`);
+      if (daysEl) daysEl.textContent = days + (days === 1 ? ' يوم' : ' أيام');
+      if (totalEl) totalEl.textContent = total + ' DH';
+    }
+
+    function bookWhatsApp(carName, rate, carKey) {
+      const pVal = document.getElementById(`pickup-${carKey}`).value || todayStr;
+      const rVal = document.getElementById(`return-${carKey}`).value || returnStr;
+      const locVal = document.getElementById(`loc-${carKey}`).value || 'الرباط';
+
+      const pDate = new Date(pVal);
+      const rDate = new Date(rVal);
+      const diff = rDate.getTime() - pDate.getTime();
+      let days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+      if (isNaN(days) || days < 1) days = 1;
+      const total = days * rate;
+
+      const msg = `السلام عليكم ورحمة الله،
+أود حجز سيارة من وكالة FISKA CAR (علاء):
+🚗 السيارة: ${carName}
+💰 السعر اليومي: ${rate} درهم / اليوم
+📅 تاريخ الاستلام: ${pVal}
+🏁 تاريخ الإرجاع: ${rVal} (${days} أيام)
+💵 المجموع التقديري: ${total} درهم
+📍 مكان التسليم: ${locVal}
+
+هل السيارة متوفرة في هذه التواريخ؟ شكراً جزيلاً.`;
+
+      const whatsappUrl = 'https://wa.me/212622177043?text=' + encodeURIComponent(msg);
+      window.open(whatsappUrl, '_blank');
+    }
+
+    function sendGeneralWhatsApp(topic) {
+      const msg = `السلام عليكم ورحمة الله، أود الاستفسار من وكالة FISKA CAR بخصوص: ${topic}`;
+      window.open('https://wa.me/212622177043?text=' + encodeURIComponent(msg), '_blank');
+    }
+  </script>
+</body>
+</html>
