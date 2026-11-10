@@ -3,112 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>فيسكا كار | Fiska Car - كراء السيارات بالرباط وتمارة</title>
+  <title>FISKA CAR | فيسكا كار - كراء السيارات بالرباط وتمارة</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <style> body { font-family: 'Cairo', sans-serif; background-color: #0b0f17; color: #f1f5f9; } </style>
+  <style>
+    body { font-family: 'Cairo', sans-serif; background-color: #050505; color: #f3f4f6; }
+    .luxury-gradient { background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%); }
+    .red-glow { box-shadow: 0 0 25px rgba(220, 38, 38, 0.3); }
+  </style>
 </head>
-<body class="bg-[#0b0f17] text-slate-100 min-h-screen flex flex-col">
+<body class="bg-[#050505] text-gray-100 min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="bg-[#0b0f17]/95 border-b border-slate-800 p-4 sticky top-0 z-50 shadow-lg backdrop-blur">
+  <header class="bg-black/90 border-b border-red-900/30 p-4 sticky top-0 z-50 backdrop-blur-md">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <h1 class="text-xl font-bold text-white flex items-center gap-2">
-        <i class="fa-solid fa-car text-amber-400"></i> FISKA CAR
-      </h1>
-      <a href="https://wa.me/212622177043?text=سلام، بغيت نستفسر على كراء السيارات" target="_blank" class="bg-green-500 hover:bg-green-600 text-black font-bold px-4 py-2 rounded-xl text-sm transition flex items-center gap-2 shadow-md">
-        <i class="fa-brands fa-whatsapp text-lg"></i> حجز واتساب
+      <div class="flex items-center gap-3">
+        <div class="bg-red-600 text-white p-2 rounded-xl shadow-lg red-glow">
+          <i class="fa-solid fa-car-side text-xl"></i>
+        </div>
+        <h1 class="text-2xl font-black tracking-wider text-white">FISKA <span class="text-red-600">CAR</span></h1>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="#home" class="hover:text-red-500 transition">الرئيسية</a>
+        <a href="#fleet" class="hover:text-red-500 transition">السيارات</a>
+        <a href="#booking" class="hover:text-red-500 transition">حجز سيارة</a>
+        <a href="#about" class="hover:text-red-500 transition">من نحن</a>
+        <a href="#contact" class="hover:text-red-500 transition">اتصل بنا</a>
+      </nav>
+      <a href="https://wa.me/212622177043?text=سلام، بغيت نستفسر على كراء السيارات" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition flex items-center gap-2 shadow-lg red-glow">
+        <i class="fa-brands fa-whatsapp text-lg"></i> حجز سريع
       </a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="py-10 px-4 max-w-7xl mx-auto text-center lg:text-right grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-    <div class="lg:col-span-7 space-y-4">
-      <span class="bg-amber-400/10 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full border border-amber-400/20 inline-block">الوكالة الأولى بالرباط وسلا وتمارة 🚗</span>
-      <h2 class="text-3xl lg:text-5xl font-black text-white leading-tight">كراء السيارات بأفضل الأسعار وبدون تعقيدات</h2>
-      <p class="text-slate-300 text-base">استمتع برحلتك مع أسطول سيارات حديثة، مريحة، ومضمونة ابتداءً من 249 درهم فقط[span_0](start_span)[span_0](end_span).</p>
-      <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
-        <div class="flex items-center gap-2 text-sm text-slate-300 bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-800">
-          <i class="fa-solid fa-phone text-amber-400"></i> 0622177043[span_1](start_span)[span_1](end_span)
-        </div>
-        <div class="flex items-center gap-2 text-sm text-slate-300 bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-800">
-          <i class="fa-solid fa-phone text-amber-400"></i> 0750525307[span_2](start_span)[span_2](end_span)
+  <section id="home" class="relative luxury-gradient py-20 px-4 overflow-hidden border-b border-red-900/20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+        <span class="bg-red-600/10 text-red-500 text-xs font-bold px-3 py-1.5 rounded-full border border-red-500/20 inline-block">الوكالة الأولى بالرباط وسلا وتمارة 🚗</span>
+        <h2 class="text-4xl lg:text-6xl font-black text-white leading-tight">رحلتك تبدأ مع <span class="text-red-600">FISKA CAR</span></h2>
+        <p class="text-gray-300 text-base lg:text-lg">استمتع بتجربة قيادة استثنائية مع أسطول سيارات فاخرة، مريحة، ومضمونة بأفضل الأسعار في المغرب.</p>
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+          <a href="#fleet" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg red-glow flex items-center gap-2">
+            استكشف السيارات <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a href="#booking" class="bg-gray-900 hover:bg-gray-800 border border-gray-700 text-white font-bold px-6 py-3 rounded-xl transition">
+            احجز الآن
+          </a>
         </div>
       </div>
-    </div>
-    <div class="lg:col-span-5">
-      <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 bg-slate-900">
-        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="Fiska Car Fleet" class="w-full h-64 object-cover">
+      <div class="lg:col-span-5">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border border-red-900/40 bg-black p-2 red-glow">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="Fiska Car Luxury" class="w-full h-80 object-cover rounded-2xl">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Fleet Section -->
-  <section class="py-12 px-4 max-w-7xl mx-auto w-full" id="fleet">
-    <div class="flex items-center justify-between mb-8 border-b border-slate-800 pb-4">
-      <h3 class="text-2xl font-bold text-white flex items-center gap-2">
-        <i class="fa-solid fa-car-side text-amber-400"></i> أسطول السيارات المتوفرة
-      </h3>
-      <span class="text-xs text-amber-400 bg-amber-400/10 px-3 py-1 rounded-lg border border-amber-400/20">متوفرة حالياً</span>
+  <section id="fleet" class="py-16 px-4 max-w-7xl mx-auto w-full">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h3 class="text-3xl font-black text-white mb-3">أسطول السيارات المتوفرة</h3>
+      <p class="text-gray-400 text-sm">سيارات حديثة، نظيفة، ومصانة بعناية لتلبية كل تطلعاتك</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Car 1 -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-        <div class="h-52 overflow-hidden relative bg-slate-950">
-          <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c351?auto=format&fit=crop&w=800&q=80" alt="Renault Clio" class="w-full h-full object-cover">
-          <span class="absolute top-3 right-3 bg-amber-400 text-black font-bold text-xs px-2.5 py-1 rounded-lg">جديدة</span>
+      <!-- Car 1: Dacia Logan -->
+      <div class="bg-black border border-red-900/30 rounded-3xl overflow-hidden shadow-xl hover:border-red-600 transition group">
+        <div class="h-56 overflow-hidden relative bg-gray-950">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Dacia Logan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 right-3 bg-red-600 text-white font-bold text-xs px-3 py-1 rounded-full">الأكثر طلباً</span>
         </div>
-        <div class="p-5 space-y-2">
-          <h4 class="text-lg font-bold text-white">رينو كليو (Renault Clio)</h4>
-          <p class="text-slate-400 text-xs">سيارة عصرية، اقتصادية وممتازة للمدن والأسفار.</p>
-          <div class="flex items-center justify-between pt-4 mt-2 border-t border-slate-800">
+        <div class="p-6 space-y-3">
+          <h4 class="text-xl font-bold text-white">داسيا لوجان (Dacia Logan)</h4>
+          <p class="text-gray-400 text-xs">مريحة، اقتصادية في استهلاك الوقود ومثالية للعائلات والمدن.</p>
+          <div class="flex items-center justify-between pt-4 mt-2 border-t border-gray-900">
             <div>
-              <span class="text-xs text-slate-400 block">الثابت اليومي</span>
-              <span class="text-amber-400 font-extrabold text-lg">249 درهم / اليوم[span_3](start_span)[span_3](end_span)</span>
+              <span class="text-xs text-gray-400 block">السعر اليومي</span>
+              <span class="text-red-500 font-extrabold text-xl">249 درهم</span>
             </div>
-            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز رينو كليو" target="_blank" class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-4 py-2 rounded-xl text-sm transition">حجز الآن</a>
+            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز داسيا لوجان" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition shadow">حجز واتساب</a>
           </div>
         </div>
       </div>
 
-      <!-- Car 2 -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-        <div class="h-52 overflow-hidden relative bg-slate-950">
-          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Dacia Duster" class="w-full h-full object-cover">
-          <span class="absolute top-3 right-3 bg-amber-400 text-black font-bold text-xs px-2.5 py-1 rounded-lg">قوية</span>
+      <!-- Car 2: Dacia Sandero -->
+      <div class="bg-black border border-red-900/30 rounded-3xl overflow-hidden shadow-xl hover:border-red-600 transition group">
+        <div class="h-56 overflow-hidden relative bg-gray-950">
+          <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c351?auto=format&fit=crop&w=800&q=80" alt="Dacia Sandero" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 right-3 bg-red-600 text-white font-bold text-xs px-3 py-1 rounded-full">عصرية</span>
         </div>
-        <div class="p-5 space-y-2">
-          <h4 class="text-lg font-bold text-white">داسيا داستر (Dacia Duster)</h4>
-          <p class="text-slate-400 text-xs">قوية، واسعة وممتازة لكل الطرقات والرحلات الطويلة.</p>
-          <div class="flex items-center justify-between pt-4 mt-2 border-t border-slate-800">
+        <div class="p-6 space-y-3">
+          <h4 class="text-xl font-bold text-white">داسيا سانديرو (Dacia Sandero)</h4>
+          <p class="text-gray-400 text-xs">تصميم رياضي شبابي، سهلة القيادة ومرنة في الزحام.</p>
+          <div class="flex items-center justify-between pt-4 mt-2 border-t border-gray-900">
             <div>
-              <span class="text-xs text-slate-400 block">الثابت اليومي</span>
-              <span class="text-amber-400 font-extrabold text-lg">399 درهم / اليوم</span>
+              <span class="text-xs text-gray-400 block">السعر اليومي</span>
+              <span class="text-red-500 font-extrabold text-xl">249 درهم</span>
             </div>
-            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز داسيا داستر" target="_blank" class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-4 py-2 rounded-xl text-sm transition">حجز الآن</a>
+            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز داسيا سانديرو" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition shadow">حجز واتساب</a>
           </div>
         </div>
       </div>
 
-      <!-- Car 3 -->
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-        <div class="h-52 overflow-hidden relative bg-slate-950">
-          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Dacia Logan" class="w-full h-full object-cover">
-          <span class="absolute top-3 right-3 bg-amber-400 text-black font-bold text-xs px-2.5 py-1 rounded-lg">الأكثر طلباً</span>
+      <!-- Car 3: Renault Clio 5 -->
+      <div class="bg-black border border-red-900/30 rounded-3xl overflow-hidden shadow-xl hover:border-red-600 transition group">
+        <div class="h-56 overflow-hidden relative bg-gray-950">
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Renault Clio 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 right-3 bg-red-600 text-white font-bold text-xs px-3 py-1 rounded-full">فاخرة</span>
         </div>
-        <div class="p-5 space-y-2">
-          <h4 class="text-lg font-bold text-white">داسيا لوجان (Dacia Logan)</h4>
-          <p class="text-slate-400 text-xs">مريحة، اقتصادية في الاستهلاك ومثالية للعائلات.</p>
-          <div class="flex items-center justify-between pt-4 mt-2 border-t border-slate-800">
+        <div class="p-6 space-y-3">
+          <h4 class="text-xl font-bold text-white">رينو كليو 5 (Renault Clio 5)</h4>
+          <p class="text-gray-400 text-xs">فخامة عالية، تقنيات متطورة وراحة قصوى في السفر.</p>
+          <div class="flex items-center justify-between pt-4 mt-2 border-t border-gray-900">
             <div>
-              <span class="text-xs text-slate-400 block">الثابت اليومي</span>
-              <span class="text-amber-400 font-extrabold text-lg">249 درهم / اليوم[span_4](start_span)[span_4](end_span)</span>
+              <span class="text-xs text-gray-400 block">السعر اليومي</span>
+              <span class="text-red-500 font-extrabold text-xl">300 درهم</span>
             </div>
-            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز داسيا لوجان" target="_blank" class="bg-amber-400 hover:bg-amber-500 text-black font-bold px-4 py-2 rounded-xl text-sm transition">حجز الآن</a>
+            <a href="https://wa.me/212622177043?text=سلام، بغيت نحجز رينو كليو 5" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition shadow">حجز واتساب</a>
           </div>
         </div>
       </div>
@@ -116,10 +130,104 @@
     </div>
   </section>
 
+  <!-- Booking Section -->
+  <section id="booking" class="py-16 px-4 bg-black/50 border-t border-red-900/20">
+    <div class="max-w-3xl mx-auto bg-black border border-red-900/40 p-8 rounded-3xl shadow-2xl red-glow">
+      <h3 class="text-2xl font-black text-white text-center mb-6">حجز موعد عبر الواتساب</h3>
+      <form id="bookingForm" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">الاسم الكامل</label>
+            <input type="text" id="fullName" required class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none" placeholder="أدخل اسمك الكامل">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">رقم الهاتف</label>
+            <input type="tel" id="phone" required class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none" placeholder="06xxxxxxxx">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">اختر السيارة</label>
+            <select id="carSelect" class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none">
+              <option value="داسيا لوجان (249 MAD)">داسيا لوجان - 249 درهم</option>
+              <option value="داسيا سانديرو (249 MAD)">داسيا سانديرو - 249 درهم</option>
+              <option value="رينو كليو 5 (300 MAD)">رينو كليو 5 - 300 درهم</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">مكان الاستلام</label>
+            <input type="text" id="location" required class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none" placeholder="الرباط / تمارة / المحطة">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">تاريخ الاستلام</label>
+            <input type="date" id="startDate" required class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-300 mb-1">تاريخ الإرجاع</label>
+            <input type="date" id="endDate" required class="w-full bg-gray-900 border border-gray-800 rounded-xl p-3 text-white focus:border-red-600 outline-none">
+          </div>
+        </div>
+
+        <button type="button" onclick="sendWhatsAppBooking()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold p-4 rounded-xl transition shadow-lg red-glow flex items-center justify-center gap-2 mt-4">
+          <i class="fa-brands fa-whatsapp text-xl"></i> إرسال الحجز عبر الواتساب
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About & Contact Section -->
+  <section id="about" class="py-16 px-4 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold text-white">من نحن - FISKA CAR</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        وكالة رائدة في كراء السيارات بالرباط وتمارة. نهدف إلى توفير أسطول سيارات حديث، آمن، وبأسعار تنافسية تلبي احتياجات زوارنا وعملاءنا المحليين. شعارنا: المصداقية، السرعة، والراحة المطلقة.
+      </p>
+      <div class="flex gap-4 pt-2">
+        <a href="https://www.instagram.com/fiska_car/" target="_blank" class="bg-gray-900 hover:bg-gray-800 p-3 rounded-xl border border-gray-800 text-red-500 transition">
+          <i class="fa-brands fa-instagram text-xl"></i>
+        </a>
+        <a href="https://wa.me/212622177043" target="_blank" class="bg-gray-900 hover:bg-gray-800 p-3 rounded-xl border border-gray-800 text-green-500 transition">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+        </a>
+      </div>
+    </div>
+    <div class="bg-black border border-red-900/30 p-6 rounded-3xl shadow-xl space-y-4" id="contact">
+      <h4 class="text-lg font-bold text-white">معلومات الاتصال</h4>
+      <p class="text-gray-400 text-sm flex items-center gap-3"><i class="fa-solid fa-location-dot text-red-600"></i> الرباط / تمارة، المغرب</p>
+      <p class="text-gray-400 text-sm flex items-center gap-3"><i class="fa-solid fa-phone text-red-600"></i> 0622177043 / 0750525307</p>
+      <p class="text-gray-400 text-sm flex items-center gap-3"><i class="fa-solid fa-envelope text-red-600"></i> contact@fiskacar.ma</p>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="mt-auto bg-slate-950 border-t border-slate-900 py-6 text-center text-slate-500 text-sm">
-    <p>© 2026 فيسكا كار (Fiska Car). جميع الحقوق محفوظة بالرباط[span_5](start_span)[span_5](end_span).</p>
+  <footer class="mt-auto bg-black border-t border-red-900/30 py-6 text-center text-gray-500 text-xs">
+    <p>© 2026 FISKA CAR. جميع الحقوق محفوظة بالرباط وتمارة.</p>
   </footer>
+
+  <!-- Script for WhatsApp Booking Integration -->
+  <script>
+    function sendWhatsAppBooking() {
+      const name = document.getElementById('fullName').value;
+      const phone = document.getElementById('phone').value;
+      const car = document.getElementById('carSelect').value;
+      const location = document.getElementById('location').value;
+      const start = document.getElementById('startDate').value;
+      const end = document.getElementById('endDate').value;
+
+      if (!name || !phone || !location || !start || !end) {
+        alert('المرجو ملء جميع معلومات الحجز!');
+        return;
+      }
+
+      const message = `السلام عليكم، بغيت نحجز سيارة:\n- الاسم: ${name}\n- الهاتف: ${phone}\n- السيارة: ${car}\n- مكان الاستلام: ${location}\n- من تاريخ: ${start}\n- إلى تاريخ: ${end}`;
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/212622177043?text=${encodedMessage}`, '_blank');
+    }
+  </script>
 
 </body>
 </html>
